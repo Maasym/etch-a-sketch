@@ -2,6 +2,10 @@ function createBoard(size){
 
     switch(size){
         case "s":
+
+            var remove = document.getElementById("board");
+            while (remove.firstChild) remove.removeChild(remove.firstChild);
+
             for(let i=0; i<=48; i++) {
                 const div = document.createElement("div");
                 div.setAttribute('class', "divboard");
@@ -19,6 +23,9 @@ function createBoard(size){
             break;
         case "m":
 
+            var remove = document.getElementById("board");
+            while (remove.firstChild) remove.removeChild(remove.firstChild);
+
             for(let i=0; i<=195; i++) {
                 const div = document.createElement("div");
                 div.setAttribute('class', "divboard");
@@ -35,6 +42,10 @@ function createBoard(size){
 
             break;
         case "l":
+
+            var remove = document.getElementById("board");
+            while (remove.firstChild) remove.removeChild(remove.firstChild);
+
             for(let i=0; i<=624; i++) {
                 const div = document.createElement("div");
                 div.setAttribute('class', "divboard");
@@ -53,5 +64,3 @@ function createBoard(size){
     }
 
 }
-
-createBoard("s")

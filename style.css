@@ -79,3 +79,11 @@ button{
     padding: 0px;
     border-width: 1px;
 }
+.sizebuttons{
+    display: flex;
+    gap: 15px;
+}
+.sizebut{
+    width:5em;
+
+}
