@@ -114,9 +114,12 @@ function randomcolor(){
 
 
 
+
+
 function clear(){
 
     let squares = document.querySelectorAll('.divboard');
     squares.forEach(div => div.style.backgroundColor="");
 }
 
+createBoard("s");
