@@ -50,7 +50,7 @@ body{
 #menu{
     background-color: peachpuff;
     width: 15em;
-    height: 30em;
+    height: 10em;
     border-color: black;
     border-style: groove;
     border-radius: 20px;
@@ -85,5 +85,4 @@ button{
 }
 .sizebut{
     width:5em;
-
 }

@@ -64,3 +64,59 @@ function createBoard(size){
     }
 
 }
+
+function mouseoverblack(){
+
+    let squares = document.querySelectorAll('.divboard');
+    squares.forEach(div => div.removeEventListener('mouseover', colorTrailrandom,  {
+    }));
+    squares.forEach(div => div.addEventListener('mouseover', colorTrailblack, {
+    }));
+}
+
+function colorTrailblack(){
+
+
+        this.style.backgroundColor = "black";
+
+}
+
+function mouseoverrandom(){
+
+    let squares = document.querySelectorAll('.divboard');
+    squares.forEach(div => div.removeEventListener('mouseover', colorTrailblack,  {
+    }));
+    squares.forEach(div => div.addEventListener('mouseover', colorTrailrandom, {
+    }));
+}
+
+function colorTrailrandom(){
+
+        this.style.backgroundColor = randomcolor();
+
+}
+
+function randomcolor(){
+
+    const values = ["A", "B", "C", "D", "E", "F", 0, 1, 2, 3, 4, 5, 6, 7,8, 9];
+    let hex = "";
+
+    for(let i = 0; i < 6; i++)
+    {
+        const index = Math.floor(Math.random() * values.length);
+        hex += values[index];
+    }
+
+    return "#" + hex;
+}
+
+
+
+
+
+function clear(){
+
+    let squares = document.querySelectorAll('.divboard');
+    squares.forEach(div => div.style.backgroundColor="");
+}
+
